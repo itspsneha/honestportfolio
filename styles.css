@@ -1,71 +1,28 @@
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(135deg, #ff7e5f, #feb47b);
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    color: #ffffff;
-    text-align: center;
-}
-
-.container {
-    width: 80%;
-    max-width: 1200px;
-}
-
-.title {
-    font-size: 3em;
-    margin-bottom: 50px;
-    text-shadow: 2px 2px 4px #000000;
-}
-
-.gif-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.gif-item {
-    margin: 20px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.gif-item img {
-    width: 100%;
-    max-width: 500px; /* Adjusted width for better fit */
-    height: auto; /* Maintain aspect ratio */
-    border: 5px solid #ff69b4;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.gif-item h2 {
-    margin-top: 10px;
-    font-size: 1.5em;
-    text-shadow: 1px 1px 2px #000000;
-}
-
-.gif-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
-}
-
-.footer {
-    margin-top: 50px;
-    font-size: 1.2em;
-    text-shadow: 1px 1px 2px #000000;
-}
-
-.footer a {
-    color: #ff69b4;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.footer a:hover {
-    text-decoration: underline;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honest Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title animate__animated animate__bounceIn">Honest Portfolio</h1>
+        <div class="gif-container">
+            <div class="gif-item animate__animated animate__fadeInLeft">
+                <img src="path_to_cool_gif.gif" alt="Being Cool">
+                <h2>Being Cool</h2>
+            </div>
+            <div class="gif-item animate__animated animate__fadeInRight">
+                <img src="path_to_job_gif.gif" alt="Getting a Job">
+                <h2>Getting a Job</h2>
+            </div>
+        </div>
+        <p class="footer animate__animated animate__fadeInUp">
+            Made by <a href="https://x.com/itspsneha" target="_blank">Sneha</a> because she is yet to create one cool dope shit portfolio 😎
+        </p>
+    </div>
+</body>
+</html>
